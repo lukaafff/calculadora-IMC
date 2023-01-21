@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Calculadora IMC</h1>
+        <!--FORMULARIO-->
+        <form action="" method="post" id="form">
+            <div class="grupo">
+                <label for="name">Nome</label>
+                <input 
+                    type="text"
+                    name="nome"
+                    id="nome"
+                    class="input"
+                    autofocus
+                    required
+                />
+            </div>
+            <div class="grupo">
+                <label for="idade">Idade</label>
+                <input 
+                    type="number"
+                    min="0"
+                    max="130"
+                    name="idade"
+                    id="idade"
+                    class="input"
+                    required
+                />
+            </div>
+            <div class="grupo">
+                <label for="peso">Peso</label>
+                <input 
+                    type="number"
+                    step="0.01"
+                    min="0.0"
+                    max="500.0"
+                    name="peso"
+                    id="peso"
+                    class="input"
+                    required
+                />
+            </div>
+            <div class="grupo">
+                <label for="altura">Altura</label>
+                <input 
+                    type="number"
+                    step="0.01"
+                    min="0.0"
+                    max="2.70"
+                    name="altura"
+                    id="altura"
+                    class="input"
+                    required
+                />
+            </div>
+        </form>
+        <!--BOTOES-->
+        <div class="grupo">
+            <button
+                type="submit"
+                class="botao"
+                id="btnEnviar">
+                Enviar
+        </button>
+        <button
+                type="reset"
+                class="botao"
+                id="btnLimpar">
+                Limpar
+        </button>
+        </div>
+        <!--RESULTADO-->
+        <div class="grupo">
+            <label for="imc">IMC</label>
+            <input 
+                type="number"
+                name="imc"
+                id="resultaldoIMC"
+                class="input"
+                value="0.0"
+                disabled
+            />
+            <span id='aviso'></span>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
