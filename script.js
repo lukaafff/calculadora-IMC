@@ -8,7 +8,6 @@ let cxAltura = document.querySelector('#altura')
 let cxImc    = document.querySelector('#resultaldoIMC')
 
 let aviso = document.querySelector('#aviso')
-let dados = document.querySelectorAll('.pessoa')
 
 let btnEnviar = document.querySelector('#btnEnviar')
 let btnLimpar = document.querySelector('#btnLimpar')
